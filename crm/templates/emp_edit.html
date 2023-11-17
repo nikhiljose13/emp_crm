@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+
+
+{%block body_block%}
+<div class="container">
+    <form action="" method="post" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_p}}
+
+<!-- 
+        {%if data.profile_pic%}
+            <img src="{{data.profile_pic.url}}" alt="" height="200px" width="250px">
+
+        {%endif%} -->
+
+
+        <button type="submit">change</button>
+    </form>
+</div>
+
+{%endblock%}
